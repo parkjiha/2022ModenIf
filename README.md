@@ -22,15 +22,18 @@ MainPage  >  Home.jsp
 
 --Home.jsp 구조--
 
-Css를 갖고 있으며, include를 통해 모듈화 진행하여, 독립적으로 개발이가능 (협업에 용이함. 또한 소스코드를 바로 노출 하지 않는 장점!)
+Css를 갖고 있으며, include를 통해 모듈화 진행하여, 독립적으로 개발이가능 
+(협업에 용이함. 또한 소스코드를 바로 노출 하지 않는 장점!)
 
-Join,Login 등 기능에 대해서는 rightMenu(우측화면 Contents 부분)을 제외한 부분이 변경되지 않게 동일한 CSS및 HTML구조 차용!
+Join,Login 등 기능에 대해서는 rightMenu(우측화면 Contents 부분)을 제외한 부분이 
+변경되지 않게 동일한 CSS및 HTML구조 차용!
 (화면전환되지 않는 듯한 효과를 낼 수 있음.)
 
 --Class 소개--
 
 --Controller--
-FrontController	기능 :	최초 index에서 무조건 이곳으로 이동함! 각 Controller 분기해주는 효과 split사용하여 주소 잘라서 Servlet이동!
+FrontController	기능 :	최초 index에서 무조건 이곳으로 이동함! 각 Controller 
+분기해주는 효과 split사용하여 주소 잘라서 Servlet이동!
 HomeController	기능:	메인화면에 띄워주어야 할 부분들 처리 및 세션의 유무에 따른 처리
 JoinController	기능:	가입기능수행 Dao로 이동시켜서 쿼리문 실행
 LoginController	기능:	로그인 화면에서 받아온 Parameter 받아서 Dao에서 쿼리기능 처리 할 수 있게 해줌!
@@ -42,7 +45,9 @@ LoginDao		기능:로그인 시에 jsp에서 입력받은 Parameter 이용해서 
 MemberLogic	기능:객체를 생성하여 Member객체, 메서드들(위의 Dao기능들) 싱글톤 활용하여 하려고 했던 잔재
 
 --vo--
-DBManager	기능:JDBC 연결 기능 close 메서드를 만들어두어 연결을 끊을 떄의 편리를 도모함(메서드 불러와서 DB연결종료)
+DBManager	기능:JDBC 연결 기능 close 메서드를 만들어두어 연결을 끊을 떄의 편리를 도모함
+(메서드 불러와서 DB연결종료)
+
 Member		기능:VO(DTO)로써 객체로써 DB와의 연결하기 위해 사용
 
 --구현 완료한 기능--
@@ -83,7 +88,9 @@ Css와 HTML작성에 익숙하지 않아 헤매었는데 프로젝트 작성중�
 
 --기타 전달하고 싶은 사항--
 
-면접관 님들 께서 코드를 직접 보기 힘드실 테니 실행화면을 캡쳐해서 첨부해 드립니다. 기능이 구현된 부분은 캡쳐해 놓았습니다.
-또한 혹시나 필요 할 것 같아 노트북도 들고 갈테니 궁금하신점이 있으시면 말씀해 주십시오. 감사합니다.
+면접관 님들 께서 코드를 직접 보기 힘드실 테니 실행화면을 캡쳐해서 첨부해 드립니다.
+기능이 구현된 부분은 캡쳐해 놓았습니다.
+또한 혹시나 필요 할 것 같아 노트북도 들고 갈테니 궁금하신점이 있으시면 말씀해 주십시오.
+감사합니다.
 
 
